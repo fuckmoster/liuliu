@@ -254,7 +254,7 @@
 }
 /*5.电子书*/
 .ebooks{
-    height: 596px;
+    height: 544px;
     margin-top: 34px;
 }
 /*左侧盒子*/
@@ -266,7 +266,7 @@
 .ebooks .left-box .top{
     width: 906px;
     height: 40px;
-    line-height: 40px;
+    line-height: 45px;
     background-color: #fff;
     border-bottom:6px  solid #ff6700 ;
 }
@@ -412,14 +412,14 @@
 /*--*******************6.服装*******************--*/
 .clothes{
     height: 500px;
-	margin-top: 50px;
+	margin-top:10px;
     background-color:#FFF;
 }
 /*顶部*/
 .clothes  .top{
     width: 1200px;
     height: 40px;
-    line-height: 40px;
+    line-height: 45px;
     background-color: #fff;
     border-bottom: 6px solid #ff6700;
 }
@@ -513,32 +513,31 @@
     height: 223px;
     background-color: pink;
 }
-
 /*商标logo*/
-.shang-logo{
-    margin-top: 15px;
+.shang_logo{
+    margin-top:10px;
+    height: 45px;
+}
+.shang_logo ul{
+	width: 1200px;
     height: 30px;
 }
-.shang-logo ul{
-	width: 1000px;
-    height: 30px;
-}
-.shang-logo ul li{
+.shang_logo ul li{
     float: left;
     height: 30px;
-    width: 80px;
+    width: 130px;
 }
 /*7.户外运动*/
 .sport{
-    height: 500px;
- margin-top: 34px;
+    height: 550px;
+ margin-top: 90px;
     background-color:#FFF;
 }
 /*顶部*/
 .sport  .top{
     width: 1200px;
     height: 40px;
-    line-height: 40px;
+    line-height: 45px;
     background-color: #fff;
     border-bottom: 6px solid #ff6700;
 }
@@ -633,18 +632,18 @@
 }
 
 /*商标logo*/
-.shang-logo{
+.shang_logo{
     margin-top: 15px;
     height: 30px;
 }
-.shang-logo ul{
- width: 1000px;
+.shang_logo ul{
+ width: 1200px;
     height: 30px;
 }
-.shang-logo ul li{
+.shang_logo ul li{
     float: left;
     height: 30px;
-    width: 80px;
+    width: 130px;
 }
 /*8.童装*/
 .children-clothes{
@@ -656,7 +655,7 @@
 .children-clothes  .top{
     width: 1200px;
     height: 40px;
-    line-height: 40px;
+    line-height: 45px;
     background-color: #fff;
     border-bottom: 6px solid #ff6700;
 }
@@ -751,18 +750,18 @@
 }
 
 /*商标logo*/
-.shang-logo{
+.shang_logo{
     margin-top: 15px;
     height: 30px;
 }
-.shang-logo ul{
- width: 1000px;
+.shang_logo ul{
+ width: 1200px;
     height: 30px;
 }
-.shang-logo ul li{
+.shang_logo ul li{
     float: left;
     height: 30px;
-    width: 80px;
+    width: 130px;
 }
 /*家居日用*/
 .daily{
@@ -966,9 +965,14 @@
 
 /*图标logo*/
 .tubiao-logo{
-	width:1200px;
-    height:80px;
-	background-color:#CCC;
+        width: 2000px;
+        height: 40px;
+        line-height: 45px;
+        background-color: #fff;
+        border-bottom: 6px solid #ff6700;
+        width:1200px;
+        height:80px;
+        background-color:#CCC;
 }
 .tubiao-logo ul{
 	width: 1000px;
@@ -983,8 +987,19 @@
 /*11.尾部*/
 .footer{
     height: 500px;
-    background-color: #333;
+    background-color:#ccc;
 
+}
+.footer .footer-text img{
+    float: right;
+}
+.footer .footer-text ul .no1{
+   width:50px;
+   height: 20px;
+}
+.footer .footer-text ul .no2{
+    width:50px;
+    height: 20px;
 }
 /*--*******************返回顶部*******************--*/
 .back_top{
@@ -998,6 +1013,97 @@
 	margin-right:0;
 	/*默认隐藏*/
 	display:none;
-	}
+    }
+    /*--*******************二维码*******************--*/
+.qr-code {
+width:40px;
+height:180px;
+background-color: red;
+/*定位*/
+position: fixed;
+top:185px;
+right:0;
+    }
+.qr-code p{
+    width:40px;
+    height:40px;
+    background-color: pink;
+}
+.qr-code p img{
+    width:100%;
+    height: 100%;
+}
+.qr-code div{
+    /*定位*/
+    position: absolute;
+    top:40px;
+    left:0;
+    z-index:-10;
+}
+.qr-code p:nth-child(2) {
+     height:100px;
+     background-color: blueviolet;
+}
+/*--*******************顶部搜索框*******************--*/
+.top-search-box{
+width:100%;
+height:50px;
+line-height: 50px;
+background-color:rgba(255,123,0, .8);
+/*定位*/
+position:fixed;
+top:0;
+left:0;
+/*默认隐藏*/
+display: none;
+}
+.top-search-box .search-box{
+    width:400px;
+    height: 30px;
+    line-height: 30px;
+    background-color:#ff6700;
+    margin:10px auto;
 
+    background-image: url(../img/bgicon.png);
+    background-repeat: no-repeat;
+    background-position:356px -2px;
+}
+.top-search-box .search-box input{
+    height:26px;
+    width:360px;
+    border:2px solid #ff6700;
+    outline: none;
+    text-indent: 10px;
+}
+.top-search-box .search-box span{
+    width:36px;
+    height:30px;
+    display:inline-block;
+}
 
+/*--*******************楼层滚动样式*******************--*/
+.floor{
+width:40px;
+height:200px;
+background-color:#f2f2f2;
+position: fixed;
+top:200px;
+margin-left: 50%;
+left:-640px;
+}
+.floor li{
+    width:40px;
+    height:40px;
+    overflow: hidden;
+    /*设置过渡效果*/
+    transition: all 0.3s;
+}
+.floor li:hover{
+    background-color: #93d56f;
+    color:#fff;
+    width:80px;
+}
+.floor li img{
+    width:40px;
+    height:40px;
+}

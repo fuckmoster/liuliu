@@ -45,7 +45,7 @@ $(function () {
     controlsH:2,//控制按钮高度
     controlsColor:"#d7d7d7",//普通控制按钮的颜色
     controlsCurrentColor:"pink",//当前控制按钮的颜色
-});
+    });
  /*图书电子书轮播 */
  $('#sport-banner').tyslide({
     boxh:286,//盒子的高度
@@ -119,3 +119,43 @@ $(function () {
 
     }); 
 
+    /*二维码滑出效果*/
+    $('.qr-code .ticket').hover(function () {
+        //让二维码滑出来
+        $('.qr-code div').stop(true).animate({
+            left:"-100px"
+        })
+    },function(){
+            //让二维码滑收回去
+            $('.qr-code div').stop(true).animate({
+                left:"0px"
+               })
+      });
+    /*顶部搜索框交互*/
+    $(document).scroll(function(){
+        
+        //获取到顶部的距离
+        var topDistance = $('html,body').scrollTop();
+        console.log(topDistance);
+        //判断
+        if (topDistance > 500) {
+            //如果滑动距离大于500则滑下来
+            $('.top-search-box').slideDown(300);
+        //    .sildeDown(300);//括号里的是弹出时间
+        }else{
+            //否则收上去
+            $('.top-search-box').slideUp(300);
+        }
+    });
+
+/*楼梯跳转*/
+$('.floor li').click(function(){
+    //获取索引
+    var index=$(this).index();
+    //选中每一个模板到顶部的偏移
+   var topOffset = $('.floorBox').eq(index).offset().top;
+   //让滚动条滚动到位置
+   $('html,body').animate({
+       scrollTop:topOffset -50
+   })
+})
