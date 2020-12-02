@@ -470,7 +470,7 @@
     float:left;
     width: 78px;
     height: 40px;
-    line-height: 40px;
+    line-height: 90px;
     /*缩进*/
     text-indent: 5px;
 }
@@ -588,7 +588,7 @@
     float:left;
     width: 78px;
     height: 40px;
-    line-height: 40px;
+    line-height: 90px;
     /*缩进*/
     text-indent: 5px;
 }
@@ -706,7 +706,7 @@
     float:left;
     width: 78px;
     height: 40px;
-    line-height: 40px;
+    line-height: 90px;
     /*缩进*/
     text-indent: 5px;
 }
@@ -986,20 +986,60 @@
 }
 /*11.尾部*/
 .footer{
-    height: 500px;
-    background-color:#ccc;
+    height: 470px;
 
 }
+.footer .logo-list {
+    width:100%;
+    height:90px;
+    background-color: #f2f2f2;
+}
+.footer .logo-list .logo-wrap{
+    width:786px;
+    height:96px;
+    margin:0 auto;
+}
+.footer .logo-list .logo-wrap li{
+    width:132px;
+    height:50px;
+    float:left;
+    margin-top: 23px;
+}
+.footer .logo-list .logo-wrap li:not(:first-child){
+    margin-left: 86px;
+}
+.footer .footer-text {
+    height:374px;
+    position: relative;
+    padding-top:40px;
+    box-sizing: border-box;
+}
 .footer .footer-text img{
-    float: right;
+   position: absolute;
+   right:98px;
+   top:62px;
 }
-.footer .footer-text ul .no1{
-   width:50px;
-   height: 20px;
+.footer .footer-text ul{
+    width:695px;
+    height:132px;
+    margin:0 auto;
 }
-.footer .footer-text ul .no2{
-    width:50px;
-    height: 20px;
+.footer .footer-text ul li{
+  float:left;
+  height:132px;
+  width:139px;
+  text-align: center;
+}
+.footer .footer-text ul li dl{
+    line-height:26px;
+}
+.footer .footer-text ul li dl dt{
+    font-weight:600;
+    font-size: 16px;
+}
+.footer .footer-text p{
+    text-align: center;
+    margin-top: 45px;
 }
 /*--*******************返回顶部*******************--*/
 .back_top{

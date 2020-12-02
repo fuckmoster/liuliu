@@ -131,6 +131,8 @@ $(function () {
                 left:"0px"
                })
       });
+
+
     /*顶部搜索框交互*/
     $(document).scroll(function(){
         
@@ -148,6 +150,7 @@ $(function () {
         }
     });
 
+    
 /*楼梯跳转*/
 $('.floor li').click(function(){
     //获取索引
